@@ -19,11 +19,11 @@
 }
 
 .t-right{
-    margin-left: 200px;
+    margin: 0 auto;
 }
 
 .t-left{
-    margin-right: 200px;
+    margin: 0 auto;
 }
 
 .t-left li{
@@ -46,13 +46,17 @@ a{
     padding: 5px 15px;
 }
 
+#menu-mobile{
+    display: none;
+}
+
 
 
 /* First Section */
 
 .cards-container{
     max-width: 900px;
-    margin: 150px 200px;
+    margin: 120px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +76,7 @@ a{
 }
 
 .card-bigger{
-    height: 300px;
+    /* height: 300px; */
     width: calc(100%/3 *2);
     background-color: #b5ddff;
     border-radius: 45px;
@@ -87,12 +91,12 @@ a{
 
 .cb-text h3{
     color: #0084fd;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .cb-text p{
     color: #5b6f80;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 #app-store{
@@ -121,8 +125,19 @@ a{
 
 /* Smartphone */
 @media screen and (max-width: 480px) {
+
+    #menu-desktop{
+        display: none;
+    }
+
+    #menu-mobile{
+        display: inline-block;
+        color: white;
+    }
+
     .cards-container{
         display: block;
+        margin: 120px auto;
     }
 
     .card, .card-bigger{
