@@ -67,8 +67,28 @@ a{
     background-color: #b5ddff;
     width: 30%;
     /* border: 1px solid black; */
-    height: 300px;
     border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card i{
+    color:#0084fd;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card h3{
+    color: #0084fd;
+    margin-bottom: 10px;
+}
+
+.card p{
+    color: #5b6f80;
+    font-size: 20px;
 }
 
 .card + .card{
@@ -142,5 +162,6 @@ a{
 
     .card, .card-bigger{
         width: 100%;
+        margin: 20px 5px;
     }
 }
