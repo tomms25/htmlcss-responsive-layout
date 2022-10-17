@@ -3,3 +3,129 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.topbar{
+    background-color: #0084fd;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.t-right{
+    margin-left: 200px;
+}
+
+.t-left{
+    margin-right: 200px;
+}
+
+.t-left li{
+    display: inline-block;
+}
+
+.t-left li+li{
+    margin: 0 10px;
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+}
+
+#button{
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+
+
+/* First Section */
+
+.cards-container{
+    max-width: 900px;
+    margin: 150px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #b5ddff;
+    width: 30%;
+    /* border: 1px solid black; */
+    height: 300px;
+    border-radius: 45px;
+}
+
+.card + .card{
+    margin: 20px 0 20px 0;
+}
+
+.card-bigger{
+    height: 300px;
+    width: calc(100%/3 *2);
+    background-color: #b5ddff;
+    border-radius: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cb-text{
+    width: 60%;
+    margin: 40px 0 0 20px;
+}
+
+.cb-text h3{
+    color: #0084fd;
+    margin-bottom: 40px;
+}
+
+.cb-text p{
+    color: #5b6f80;
+    margin-bottom: 40px;
+}
+
+#app-store{
+    background-color: #0084fd;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+.cb-photo{
+   width: 40%;
+   
+}
+
+.cb-photo img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Smartphone */
+@media screen and (max-width: 480px) {
+    .cards-container{
+        display: block;
+    }
+
+    .card, .card-bigger{
+        width: 100%;
+    }
+}
