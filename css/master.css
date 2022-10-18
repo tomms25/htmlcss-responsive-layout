@@ -138,9 +138,139 @@ a{
 }
 
 
+
+
+/* Second Section */
+.section2-container{
+    max-width: 100%;
+    background-color: #9792e4;
+    /* height: 500px; */
+}
+
+
+.strategic-container{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.planning{
+    width: 50%;
+    background-color: yellow;
+    /* height: 300px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.developement{
+    width: 50%;
+    background-color: red;
+    height: 200px;
+}
+
+
+/* Third Section */
+.partners-container{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners-text{
+    margin-top: 50px;
+}
+
+.partners-text h6{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.partners-text h3{
+    text-align: center;
+    color: #9792e4;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.partners-text p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.user-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #9792e4;
+    border-radius: 15px;
+    
+}
+
+.user-form img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.user-form span{
+    color: white;
+}
+
+
+/* Fourth section */
+
+
+
+
+
+
+
 /* Tablet */
 @media screen and (max-width: 768px) {
-    
+    #menu-desktop{
+        display: none;
+    }
+
+    #menu-mobile{
+        display: inline-block;
+        color: white;
+    }
+
+    .strategic-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .developement{
+        margin-bottom: 40px;
+    }
+
+    .user-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #9792e4;
+        border-radius: 15px;
+        margin: 30px 20px;
+    }
+
+    .user-form span{
+        color: white;
+    }
 }
 
 /* Smartphone */
@@ -164,4 +294,34 @@ a{
         width: 100%;
         margin: 20px 5px;
     }
+
+    .strategic-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .developement{
+        margin-bottom: 40px;
+    }
+
+    .user-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #9792e4;
+        border-radius: 15px;
+        margin: 30px 20px;
+        
+    }
+
+    .user-form span{
+        color: white;
+    }
+
 }
+
