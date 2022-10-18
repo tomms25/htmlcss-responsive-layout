@@ -287,7 +287,44 @@ a{
 }
 
 
-/* Fourth section */
+/* Fifth section */
+
+.aboutus-container{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.abu-text{
+    width: 70%;
+}
+
+
+.abu-text h2{
+    color: #9792e4;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.abu-text p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 90%;
+    line-height: 2;
+}
+
+.abu-photo{
+    width: 30%;
+}
+
+.abu-photo img{
+    width: 80%;
+    border-radius: 50%;
+}
+
 
 
 
