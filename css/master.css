@@ -57,6 +57,9 @@ a{
 .cards-container{
     max-width: 900px;
     margin: 120px auto;
+}
+
+.row{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +75,6 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
 }
 
 .card i{
@@ -91,7 +93,6 @@ a{
     color: #5b6f80;
     font-size: 18px;
     width: 80%;
-    padding-bottom: 10px ;
 }
 
 .card + .card{
@@ -287,6 +288,78 @@ a{
 }
 
 
+/* Fourth section */
+
+.benefits-container{
+    width: 100%;
+    background-color: #9792e4;
+}
+
+
+.b-text h2{
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 40px;
+}
+
+.b-row{
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.b-card{
+    width: calc(100%/3 - 10px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+}
+
+.b-content{
+    width: 90%;
+    margin: 10px;
+}
+
+.b-content h3{
+    color: #9792e4;
+    font-size: 50px;
+}
+
+.b-content span{
+    color: #9792e4;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.b-content p{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.b-content a{
+    background-color: #9792e4;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
 /* Fifth section */
 
 .aboutus-container{
@@ -318,13 +391,33 @@ a{
 
 .abu-photo{
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .abu-photo img{
     width: 80%;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
+.abu-photo p{
+    color: #9792e4;
+    font-weight: bold;
+    font-size: 20px;
+    width: 60%;
+    line-height: 1.5;
+}
+
+
+.abu-photo a{
+    margin-top: 20px;
+    background-color: #9792e4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
 
 
 
@@ -348,7 +441,7 @@ a{
 
     /* First section */
     .cards-container{
-        width: 80%;
+        width: calc(100% - 150px);
     }
     .card-bigger{
         display: flex;
@@ -358,6 +451,8 @@ a{
     .cb-text p{
         width: 100%;
     }
+
+    
 
     /* Second section */
 
@@ -370,7 +465,7 @@ a{
     }
 
     .planning{
-        width: 80%;
+        width: calc(100% - 150px);
         /* background-color: yellow; */
         /* height: 300px; */
         /* margin-top: 50px;
@@ -403,16 +498,36 @@ a{
         padding: 10px;
         background-color: #9792e4;
         border-radius: 15px;
-        margin: 30px 20px;
+        width: calc(100% - 150px);
+        margin: 30px auto;
     }
 
     .user-form span{
         color: white;
     }
+
+
+    /* Fourth section */
+
+    .b-row{
+        width: calc(100% - 150px);
+    }
+
+    .b-card{
+        width: calc(100%/2 - 10px);
+    }
+
+    /* Fifth section */
+
+    .aboutus-container{
+        width: calc(100% - 150px);
+    }
 }
 
 /* Smartphone */
 @media screen and (max-width: 480px) {
+
+    /* First section */
 
     #menu-desktop{
         display: none;
@@ -433,6 +548,9 @@ a{
         margin: 20px 5px;
     }
 
+
+    /* Second section */
+
     .strategic-container{
         display: flex;
         flex-direction: column;
@@ -446,6 +564,9 @@ a{
         width: 80%;
     }
 
+
+    /* Third section */
+
     .user-form{
         display: flex;
         flex-direction: column;
@@ -454,12 +575,35 @@ a{
         padding: 10px;
         background-color: #9792e4;
         border-radius: 15px;
-        margin: 30px 20px;
+        margin: 30px auto;
         
     }
 
     .user-form span{
         color: white;
+    }
+
+
+
+    /* Fourth section */
+
+    .b-row{
+        width: calc(100% - 150px);
+    }
+
+    .b-card{
+        width: 100%;
+    }
+
+    /* Fifth section */
+
+    .aboutus-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .abu-photo{
+        width: 70%;
     }
 
 }
